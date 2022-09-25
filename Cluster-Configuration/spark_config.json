@@ -1,0 +1,20 @@
+[
+ {
+  "Classification": "spark-defaults",
+  "Properties" : {
+	"spark.path" : "s3://tharak-landing-zone/configurations/app_config.json",
+	"spark.master" : "yarn",
+	"spark.submit.deployMode" : "cluster",
+	"spark.driver.memory" : "4g",
+	"spark.executor.memory" : "1g",
+	"spark.driver.cores" : "1",
+	"spark.executor.cores" : "4",
+	"spark.num-executors" : "8",
+	"spark.dynamicAllocation.initialExecutors" : "8",
+	"spark.dynamicAllocation.minExecutors" : "10",
+	"spark.hadoop.mapreduce.fileoutputcommitter.algorithm.version" : "2",
+	"spark.hadoop.fs.s3a.block.size" : "512M",
+	"maximumResourceAllocation" : "true"
+  }
+ }
+]
